@@ -1,38 +1,51 @@
-.App {
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #83a4d4, #b6fbff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.app {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.15);
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+input {
+  padding: 10px;
+  width: 60%;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+button {
+  padding: 10px 20px;
+  background-color: #4facfe;
   color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+button:hover {
+  background-color: #00f2fe;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.weather-card {
+  margin-top: 1.5rem;
+  background-color: #f0f8ff;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.error {
+  color: red;
+  margin-top: 1rem;
 }
