@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './App.css';
 import WeatherCard from './WeatherCard';
 
-const API_KEY = "97efaae62c4478486e0021e7e2aef33f"; // Replace with your OpenWeatherMap API key
+const API_KEY = "Replace with your OpenWeatherMap API key"; // Replace with your OpenWeatherMap API key
 
 function App() {
   const [city, setCity] = useState('');
